@@ -609,3 +609,24 @@
 # print(wynik)
 
 #17. Korzystając z list składanych wygeneruj listę zawierajaca 10 kolejnych poteg 2
+
+# lista=[]
+# for p in range(1,11):
+#     lista.append(pow(2,p))
+# print(lista)
+#
+# lista=[pow(2,p) for p in range(1,11)]
+# print(lista)
+#
+# print([pow(2,p) for p in range(1,11)])
+
+#18.  Korzystając z list składanych wygeneruj listę 10 elementow której każdy element
+# również będzie listą. Pierwszy element tej podlisty to numer potegi,
+# a drugi to wartosc tej potegi dla liczby 2
+
+
+lista=[]
+for x in range(1,11):
+    podlista=[x,pow(2,x)]
+    lista.append(podlista)
+print(lista)
