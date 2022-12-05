@@ -313,9 +313,53 @@
 #od 1 do 10 do zmiennej suma, tak dlugo az suma nie osiagnie wartosci wiekszej
 # od wartosci podanej przez uzytkownika
 
-import random
-#print(random.randint(1,100))
-x=random.randint(1,100)
-print(x)
+# import random
+# #print(random.randint(1,100))
+# x=random.randint(1,100)
+# print(x)
+#
+# import random
+# suma=0
+# max=int(input('podaj max zakres:\n'))
+# while suma<max:
+#     wylosowane=random.randint(1,10)
+#     suma=suma+wylosowane
+#     print(wylosowane,suma)
 
+#przerwa obiadowa do 13:21
+#
+# tekst="siała BABA mak, dostała 10 lat bo nie płaciła VAT"
+# print(tekst.upper())
+# print(tekst.lower())
+# print(tekst.title())
+# print(tekst.replace('a','X'))
+# print(tekst.lower().replace('a','X'))
+# print(tekst.upper().replace('A','X'))
+# print(tekst.count('a'))
+# print(tekst.lower().count('a'))
+# print(len(tekst))
+# lista=[1,2,3,4]
+# print(len(lista))
+# #print(tekst.len())
+# for literka in tekst:
+#     print(literka)
+# print('hajs '*10)
+# x=input('podaj x:\n')
+# print(x*10)
+# if "Java">"Python":
+#     print('chyba śnisz')
+# else:
+#     print('no rejczel...')
+#
+# tekst="siała BABA mak, dostała 10 lat bo nie płaciła VAT"
+# print(tekst[0:11])
+#
+# for x in range(1,11):
+#     pass
+#
+# tekst="siała BABA mak, dostała 10 lat bo nie płaciła VAT"
+# for literka in tekst:
+#     print(literka)
 
+#10. Napisz program który przyjmie od użyszkodnika ciąg tekstowy a następnie usunie
+# z niego znaki ,.!? i wyświetli powiększony do dużych liter na konsoli
