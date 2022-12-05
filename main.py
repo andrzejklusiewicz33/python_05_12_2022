@@ -109,3 +109,31 @@
 
 # if x<0:
 #     print(f'{x} jest ujemne')
+#
+# liczba=float(input('podaj liczbę:\n'))
+# if liczba>0:
+#     print(f'{liczba} jest dodatnia')
+# elif liczba==0:
+#     print(f'{liczba} jest zerem')
+# else:
+#     print(f'{liczba} jest ujemna')
+
+
+#4. Rozbuduj swój program do bmi w taki sposob by poza wyswietleniem obliczonego bmi
+#  wyświetlił nam również odpowiedni opis wg skali z Wikipedii.
+#
+# wzrost=float(input('podaj wzrost w metrach:\n'))
+# masa=float(input('podaj masę w kilogramach:\n'))
+# print(f'wzrost={wzrost}')
+# print(f'masa={masa}')
+# bmi=round(masa/pow(wzrost,2),2)
+# print(f'bmi={bmi}')
+# if bmi<16:
+#     print('wygłodzenie')
+#
+
+#
+# x=1
+# y=1
+# if x==1 and y==1:
+#     print('oba są równe 1')
