@@ -661,3 +661,17 @@
 #20. Korzystajac z list skladanych zaladuj do listy zawartosc pliku dane.csv w taki sposób
 # by linie oczyścic z bialych znaków i rozbić na listy. Każdy z elementów listy sam
 # powinien byc listą. Następnie przeiteruj po wyniku i wyświetl wszystkie elementy listy   linia po linii.
+#
+# lista=[]
+# for linia in open('dane.csv',encoding='utf-8'):
+#     lista.append(linia.strip().split(';'))
+# print(lista)
+
+# lista=[ linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]
+# print(lista)
+#
+# for e in lista:
+#     print(e)
+
+# for e in [ linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]:
+#     print(e[1],e[2])
