@@ -51,3 +51,61 @@
 #
 # x=float(input('podaj x:\n'))
 # print(x)
+#
+# wzrost=float(input('podaj wzrost w metrach:\n'))
+# masa=float(input('podaj masę w kilogramach:\n'))
+# print(f'wzrost={wzrost}')
+# print(f'masa={masa}')
+# bmi=round(masa/pow(wzrost,2),2)
+# print(f'bmi={bmi}')
+
+#
+# wzrost=float(input('podaj wzrost w metrach:\n'))
+# masa=float(input('podaj masę w kilogramach:\n'))
+# print(f'wzrost={wzrost}')
+# print(f'masa={masa}')
+# print(f'bmi={round(masa/pow(wzrost,2),2)}')
+
+
+# wzrost=float(input('podaj wzrost w metrach:\n'))
+# masa=float(input('podaj masę w kilogramach:\n'))
+# print(f'wzrost={wzrost}')
+# print(f'masa={masa}')
+# print(f'bmi='+str(round(masa/pow(wzrost,2),2)))
+
+# wzrost=float(input('podaj wzrost w metrach:\n'))
+# masa=float(input('podaj masę w kilogramach:\n'))
+# print(f'wzrost={wzrost}')
+# print(f'masa={masa}')
+# bmi=round(masa/pow(wzrost,2),2)
+# print(f'bmi={bmi}')
+
+#
+# x=2
+# if x==1:
+#     print('jeden!')
+#     print('jeden!')
+# else:
+#     print('nie jeden!')
+# print('koniec')
+
+
+#
+# x=2
+# if x==1:
+#     print('jeden!')
+# elif x==2:
+#     print('dwa!')
+# elif x==3:
+#     print('trzy!')
+# else:
+#     print('poza zakresem')
+# print('koniec')
+
+
+#3. Niech użytkownik poda jakąś liczbę. Jeśli poda dodatnią to chcemy wyświetlić tę wartość
+# z informacją "wartość dodatnia", jeśli zero to wyświetlamy z informacją "równe zero",
+# jeśli ujemna to wyświetlamy "wartość ujemna".
+
+# if x<0:
+#     print(f'{x} jest ujemne')
