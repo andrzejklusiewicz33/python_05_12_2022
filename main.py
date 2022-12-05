@@ -139,25 +139,53 @@
 #     print('oba są równe 1')
 
 
-wzrost=float(input('podaj wzrost w metrach:\n'))
-masa=float(input('podaj masę w kilogramach:\n'))
-print(f'wzrost={wzrost}')
-print(f'masa={masa}')
-bmi=round(masa/pow(wzrost,2),2)
-print(f'bmi={bmi}')
-if bmi<16:
-    print('wygłodzenie')
-elif bmi<17:
-    print('wychudzenie')
-elif bmi<18.5:
-    print('niedowaga')
-elif bmi<25:
-    print('masa ok')
-elif bmi<30:
-    print('nadwaga')
-elif bmi<35:
-    print('otyłość 1 stopnia')
-elif bmi<40:
-    print('otyłość 2 stopnia')
-else:
-    print('otyłość 3 stopnia')
+# wzrost=float(input('podaj wzrost w metrach:\n'))
+# masa=float(input('podaj masę w kilogramach:\n'))
+# print(f'wzrost={wzrost}')
+# print(f'masa={masa}')
+# bmi=round(masa/pow(wzrost,2),2)
+# print(f'bmi={bmi}')
+# if bmi<16:
+#     print('wygłodzenie')
+# elif bmi<17:
+#     print('wychudzenie')
+# elif bmi<18.5:
+#     print('niedowaga')
+# elif bmi<25:
+#     print('masa ok')
+# elif bmi<30:
+#     print('nadwaga')
+# elif bmi<35:
+#     print('otyłość 1 stopnia')
+# elif bmi<40:
+#     print('otyłość 2 stopnia')
+# else:
+#     print('otyłość 3 stopnia')
+
+#przerwa do 11:45
+#
+# for x in range(10):
+#     print('siema!')
+#
+# while 1==1:
+#     print('siema!')
+#
+# for x in range(10):
+#     print('siema!')
+
+
+# for x in range(10):
+#     print(f'siema po raz {x}!')
+
+# for x in range(1,11):
+#     print(f'siema po raz {x}!')
+
+# for x in range(1,11,2):
+#     print(f'siema po raz {x}!')
+#
+# for x in range(1,11):
+#     print(f'{x}*10={x*10}!')
+
+#5. Wyświetl 20 kolejnych potęg liczby 2
+
+#print(pow(2,10))
