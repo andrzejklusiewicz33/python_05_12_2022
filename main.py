@@ -189,3 +189,20 @@
 #5. Wyświetl 20 kolejnych potęg liczby 2
 
 #print(pow(2,10))
+#
+# for p in range(1,21):
+#     print(p,pow(2,p))
+#
+# for x in range(-10,11):
+#     if x<0:
+#         print(f'{x} jest ujemne')
+#     elif x==0:
+#         print(f'{x} jest zerem')
+#     else:
+#         print(f'{x} jest dodatnie')
+# print('koniec')
+
+#6. Wydrukuj liczby w zakresie 1-100 wypisujac obok czy dana liczba jest
+  # parzysta czy nieparzysta
+
+#print(11%2)
