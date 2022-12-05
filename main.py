@@ -32,3 +32,22 @@
 # print('Witaj {} {}!'.format(imie,nazwisko))
 # print(f'Witaj {imie} {nazwisko}!')
 
+#przerwa do 10:38
+
+# liczba1=float(   input('podaj liczbę:\n')     )
+# print(liczba1,type(liczba1))
+# print(liczba1/2)
+
+# x=1.5
+# print(x,type(x))
+# print('x='+str(x))
+# print('x={}'.format(x))
+# print(f'x={x}')
+
+#2. BMI= masa/(wzrost*wzrost) . Napisz program który odbierze od użytkownika jego masę
+# w kilogramach i wzrost w metrach, wyliczy i wypisze BMI.
+
+#print(pow(10,4))
+#
+# x=float(input('podaj x:\n'))
+# print(x)
