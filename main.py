@@ -447,3 +447,67 @@
 #14. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
 #Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl
 # na konsoli w osobnej linii.
+#
+# lista=[]
+# for p in range(1,11):
+#     potega=pow(2,p)
+#     print(potega)
+
+#
+# lista=[]
+# for p in range(1,11):
+#     potega=pow(2,p)
+#     lista.append(potega)
+#
+# for l in lista:
+#     print(l)
+
+#
+# lista=[]
+# for p in range(0,11):
+#     lista.append(pow(2,p))
+#
+# for l in lista:
+#     print(l)
+
+# lista1=[1,2,3,4,5]
+# lista2=lista1
+# lista1.clear()
+# print(lista1)
+# print(lista2)
+
+# lista1=[1,2,3,4,5]
+# lista2=lista1.copy()
+# lista1.clear()
+# print(lista1)
+# print(lista2)
+#
+# lista1=[1,2,3]
+# lista2=[4,5,6]
+# wynik=lista1+lista2
+# print(wynik)
+
+#
+# lista1=[1,2,3]
+# lista2=[4,5,6]
+# print(lista1)
+# print(*lista1)
+# wynik=[*lista1,*lista2]
+# print(wynik)
+
+# def funkcja(*args):
+#     pass
+
+
+# lista1=[1,2,3]
+# lista2=[4,5,6]
+# wynik=[*lista1,*lista2]
+# print(wynik)
+
+# lista1=[1,2,3]
+# lista2=[4,5,6]
+# lista1.extend(lista2)
+# print(lista1)
+
+#15. Stwórz dwie listy. Każda z list ma zawierać 10 liczb losowych z zakresu 1-10.
+# Połącz te dwie listy do jednej i wyswietl na konsoli (extend albo *lista)
