@@ -363,3 +363,16 @@
 
 #10. Napisz program który przyjmie od użyszkodnika ciąg tekstowy a następnie usunie
 # z niego znaki ,.!? i wyświetli powiększony do dużych liter na konsoli
+#tekst="cośtam ,.!? cośtam"
+# tekst=input('daj tekst:\n')
+# print(tekst.replace(',','').replace('.','').replace('!','').replace('?','').upper())
+#
+# for linia in open('tadzio.txt',encoding='utf-8'):
+#     print(len(linia.strip()),linia.strip())
+
+#11. Napisz program który wyświetli na konsoli niepuste linie z pliku tekstowego
+# którego nazwę poda użytkownik
+
+nazwa_pliku='tadzio.txt'
+for linia in open(nazwa_pliku,encoding='utf-8'):
+    print(len(linia.strip()),linia.strip())
