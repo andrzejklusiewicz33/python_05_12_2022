@@ -412,3 +412,38 @@
  # poszukiwaną frazę, oraz nazwę pliku. Wyszukiwarka powinna wyświetlić
  #  linie w których znalazła poszukiwaną frazę wraz z numerem linii.
 #  Wyszukiwarka powinna być nieczula na wielkosc liter.
+#
+# if szukana.lower() in linia.lower():
+#     print(linia.strip())
+#
+# szukane=input('podaj szukaną frazę:\n')
+# plik=input('podaj nazwę pliku:\n')
+# x=0
+# for linia in open(plik,encoding='utf-8'):
+#     x+=1
+#     if szukane.upper() in linia.upper():
+#         print(x,linia.strip())
+
+
+#przerwa do 14:36
+#
+# lista=[]
+# lista=list()
+# lista=[1,2,3,4]
+# lista.append(5)
+# print(lista)
+# for e in lista:
+#     print(e)
+#
+# lista=[]
+# for x in range(1,11):
+#     lista.append(f'element numer {x}')
+#
+# for e in lista:
+#     print(e)
+#
+# print(len(lista))
+
+#14. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
+#Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl
+# na konsoli w osobnej linii.
