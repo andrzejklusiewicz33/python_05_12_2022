@@ -25,3 +25,10 @@
 
 #1. Napisz program który przyjmie od użyszkodnika imię oraz nazwisko, a następnie
 # wypisze na konsoli komunikat typu "Witaj TwojeImie TwojeNazwisko!"
+
+# imie=input('Podaj swoje imię:\n')
+# nazwisko=input('Podaj swoje nazwisko:\n')
+# print('Witaj '+imie+' '+nazwisko+'!' )
+# print('Witaj {} {}!'.format(imie,nazwisko))
+# print(f'Witaj {imie} {nazwisko}!')
+
