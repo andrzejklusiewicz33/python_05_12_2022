@@ -388,3 +388,27 @@
 # tekst="siała BABA mak"
 # print(tekst.count('a'))
 # print(tekst.lower().count('baba'))
+#
+# nazwa_pliku=input('podaj nazwę pliku:\n')
+# szukane=input('podaj szukaną frazę:\n')
+# calosc=open(nazwa_pliku,encoding='utf-8').read().lower()
+# print(calosc.count(szukane))
+
+
+# tekst="siała baba mak"
+# if tekst.count('baba')>0:
+#     print('jest szukane')
+# else:
+#     print('nie ma')
+#
+# tekst="siała baba mak"
+# szukane='BABA'
+# if szukane.lower() in tekst.lower():
+#     print('jest')
+# else:
+#     print('nie ma ')
+
+#13. Napisz wyszukiwarkę plikową. Wyszukiwarka powinna odebrać od użytkownika
+ # poszukiwaną frazę, oraz nazwę pliku. Wyszukiwarka powinna wyświetlić
+ #  linie w których znalazła poszukiwaną frazę wraz z numerem linii.
+#  Wyszukiwarka powinna być nieczula na wielkosc liter.
