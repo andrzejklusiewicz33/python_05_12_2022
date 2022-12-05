@@ -137,3 +137,27 @@
 # y=1
 # if x==1 and y==1:
 #     print('oba są równe 1')
+
+
+wzrost=float(input('podaj wzrost w metrach:\n'))
+masa=float(input('podaj masę w kilogramach:\n'))
+print(f'wzrost={wzrost}')
+print(f'masa={masa}')
+bmi=round(masa/pow(wzrost,2),2)
+print(f'bmi={bmi}')
+if bmi<16:
+    print('wygłodzenie')
+elif bmi<17:
+    print('wychudzenie')
+elif bmi<18.5:
+    print('niedowaga')
+elif bmi<25:
+    print('masa ok')
+elif bmi<30:
+    print('nadwaga')
+elif bmi<35:
+    print('otyłość 1 stopnia')
+elif bmi<40:
+    print('otyłość 2 stopnia')
+else:
+    print('otyłość 3 stopnia')
