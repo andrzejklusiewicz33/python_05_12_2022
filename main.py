@@ -1072,8 +1072,14 @@ niechciane=['!','?','.',',',":","/","(",")",'-','…']
 for n in niechciane:
     calosc=calosc.replace(n,'')
 slowa=calosc.split()
+sl=dict()
 for s in slowa:
-    print(s,slowa.count(s))
+    if s in sl:
+        pass #zwiększ wartość o 1
+    else:
+        pass #dodaj nowy wpis z wartością 1
+# for s in slowa:
+#     print(s,slowa.count(s))
 k=time.time()
 print(f'całość trwała {k-p}s')
 #lista=calosc.split()
