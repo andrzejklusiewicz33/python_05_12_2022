@@ -993,3 +993,28 @@
 
 #29. Zduplikuj jeden z wierszy w pliku dane.csv.
 # Napisz kod który zwróci do postaci listy krotek zawartość tego pliku z danymi bez powtórek.
+
+# lista=list(set([ tuple(e.strip().split(';')) for e in open('dane.csv',encoding='utf-8')]))
+# for e in lista:
+#     print(e)
+
+#
+# for f in list(set([ tuple(e.strip().split(';')) for e in open('dane.csv',encoding='utf-8')])):
+#     print(f)
+#
+# sl=dict()
+# sl={}
+# sl['klucz1']='wartość tekstowa'
+# sl['klucz2']=12345
+# sl['lista']=[1,2,3,4,5]
+# print(sl)
+# print( sl['klucz2'] )
+# for k in sl:
+#     print(k,sl[k])
+
+#30. Stwórz plik ustawienia.conf i umieść w nim poniższe dane
+# encoding=utf-8
+# timezone=-2
+# color=black
+# Następnie wczytaj dane do słownika w ten sposób by pierwsza kolumna stanowila klucze a druga przypisane do nich
+# wartości. Przeiteruj po słowniku i wypisz klucze oraz przypisane do nich wartości
