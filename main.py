@@ -1064,7 +1064,18 @@
 #       w słowniku. Jeśli nie ma to dodaj do słownika wpis o kluczu takim jak sprawdzane słowo i wartości 1
 #       dla ilości wystąpień. Jeśli takie słowo pojawia się już w kluczach słownika to trzeba zwiększyc wartośc o 1
 #    c) Przepakuj dane ze słownika do listy i posortuj.
+import time
 
+p=time.time()
+calosc=open('tadzio.txt',encoding='utf-8').read().lower()
+niechciane=['!','?','.',',',":","/","(",")",'-','…']
+for n in niechciane:
+    calosc=calosc.replace(n,'')
+slowa=calosc.split()
+for s in slowa:
+    print(s,slowa.count(s))
+k=time.time()
+print(f'całość trwała {k-p}s')
 #lista=calosc.split()
 #
 # sl=dict()
@@ -1079,3 +1090,6 @@
 # for n in niechciane:
 #     tekst=tekst.replace(n,'')
 # print(tekst)
+
+
+#cowsay i easygui
