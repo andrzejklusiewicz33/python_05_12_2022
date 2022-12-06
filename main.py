@@ -845,13 +845,17 @@
 #     print(e)
     #print(e[0]) #e jest krotką
 
+szukane=input('Podaj szukaną frazę:')
+katalog_startowy=input('Podaj katalog startowy: ')
 import os
-for e in os.walk('e:\\'):
+for e in os.walk(katalog_startowy):
     katalogi=e[1]
     for k in katalogi:
-        if 'oracle' in k:
+        if szukane.upper() in k.upper():
             print(os.path.join(e[0],k))
-            #print(e[0],k)
+    pliki=e[2]
+    for p in pliki:
+        pass
 
 
 #przerwa do 10:10
