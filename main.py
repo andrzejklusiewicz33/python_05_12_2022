@@ -725,3 +725,74 @@
 
 #22. Wygeneruj listę 10 elementów o losowej wartości liczbowej,
 # posortuj listę i wyświetl jej zawartość linia po linii
+#
+# import random
+# lista=[random.randint(1,100) for e in range(10)]
+# print(lista)
+# posortowana=sorted(lista)
+# print(posortowana)
+# lista.sort()
+# print(lista)
+
+#
+# lista=[
+#     [2,'A'],
+#     [3,'B'],
+#     [1,'D'],
+#     [4,'C']
+# ]
+# print(lista)
+# lista.sort()
+# print(lista)
+
+#
+# import operator
+#
+# lista=[
+#     [2,'A'],
+#     [3,'B'],
+#     [1,'D'],
+#     [4,'C']
+# ]
+# lista.sort(key=operator.itemgetter(1))
+# print(lista)
+
+
+# import operator
+#
+# lista=[
+#     [2,'A'],
+#     [3,'B'],
+#     [1,'D'],
+#     [4,'C']
+# ]
+# lista.sort(key=operator.itemgetter(1),reverse=True)
+# print(lista)
+
+#
+# lista=[
+#     [2,'A'],
+#     [3,'B'],
+#     [1,'D'],
+#     [4,'C']
+# ]
+# lista.sort(key=lambda x:x[1])
+# print(lista)
+
+# class Osoba:
+#     def __init__(self,i,n):
+#         self.imie=i
+#         self.nazwisko=n
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# lista=[]
+# lista.append(Osoba('Andrzej','Klusiewicz'))
+# lista.append(Osoba('Abelard','Giza'))
+# lista.append(Osoba('Twoja','Stara'))
+# lista.sort(key=lambda x:x.nazwisko)
+# for e in lista:
+#     print(e)
+
+#23. Wczytaj do listy kolejne wiersze z pliku dane.csv. Dane posortuj po wadze i wyswietl linia po linii na konsoli
+
