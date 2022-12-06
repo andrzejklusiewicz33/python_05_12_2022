@@ -796,8 +796,18 @@
 
 #23. Wczytaj do listy kolejne wiersze z pliku dane.csv. Dane posortuj po wadze i wyswietl linia po linii na konsoli
 
+#
+# lista=[linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]
+# lista.sort(key=lambda x:x[4])
+# for e in lista:
+#     print(e)
+#
+# import operator
+# lista=[linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]
+# lista.sort(key=operator.itemgetter(4))
+# for e in lista:
+#     print(e)
 
-lista=[linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]
+#24. Wyświetl na konsoli linia po linii dane z pliku dane.csv ale posortowane  malejąco wg. bmi
 
-for e in lista:
-    print(e)
+lista = [linia.strip().split(';') for linia in open('dane.csv', encoding='utf-8')]
