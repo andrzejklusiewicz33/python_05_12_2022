@@ -1075,11 +1075,13 @@ slowa=calosc.split()
 sl=dict()
 for s in slowa:
     if s in sl:
-        pass #zwiększ wartość o 1
+        sl[s]+=1
     else:
-        pass #dodaj nowy wpis z wartością 1
-# for s in slowa:
-#     print(s,slowa.count(s))
+        sl[s]=1
+
+for k in sl:
+    print(k,sl[k])
+
 k=time.time()
 print(f'całość trwała {k-p}s')
 #lista=calosc.split()
@@ -1097,5 +1099,11 @@ print(f'całość trwała {k-p}s')
 #     tekst=tekst.replace(n,'')
 # print(tekst)
 
+# sl=dict()
+# klucz='klucz1'
+# if klucz in sl:
+#     sl[klucz]=sl[klucz]+1
+# else:
+#     sl[klucz]=1
 
 #cowsay i easygui
