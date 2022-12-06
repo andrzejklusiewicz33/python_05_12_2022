@@ -689,3 +689,39 @@
 
 #21. Dla każdego wpisu w pliku dane.csv wyświetl na konsoli dane o
 #   id, imieniu,nazwisku, wzroscie,masie oraz obliczonym bmi zawodnika
+#
+# for e in [linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]:
+#     bmi=round(float(e[4])/pow(float(e[3]),2),2)
+#     print(*e,bmi)
+#
+#
+# for e in [linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]:
+#     bmi=round(float(e[4])/pow(float(e[3]),2),2)
+#     e.append(bmi)
+#     print(e)
+
+# lista=[4,7,2,1,8,2,3,4,5]
+# lista.sort()
+# print(lista)
+
+# lista=[4,7,2,1,8,2,3,4,5]
+# posortowana=sorted(lista)
+# print(posortowana)
+
+#
+# lista=[4,7,2,1,8,2,3,4,5]
+# lista.sort()
+# lista.reverse()
+# print(lista)
+
+#
+# lista=[4,7,2,1,8,2,3,4,5]
+# lista.sort(reverse=True)
+# print(lista)
+
+# lista=[4,7,2,1,8,2,3,4,5]
+# posortowana=sorted(lista,reverse=True)
+# print(posortowana)
+
+#22. Wygeneruj listę 10 elementów o losowej wartości liczbowej,
+# posortuj listę i wyświetl jej zawartość linia po linii
