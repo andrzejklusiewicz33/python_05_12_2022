@@ -844,18 +844,73 @@
 # for e in os.walk('e:\\'):
 #     print(e)
     #print(e[0]) #e jest krotką
-
-szukane=input('Podaj szukaną frazę:')
-katalog_startowy=input('Podaj katalog startowy: ')
-import os
-for e in os.walk(katalog_startowy):
-    katalogi=e[1]
-    for k in katalogi:
-        if szukane.upper() in k.upper():
-            print(os.path.join(e[0],k))
-    pliki=e[2]
-    for p in pliki:
-        pass
+#
+# szukane=input('Podaj szukaną frazę:')
+# katalog_startowy=input('Podaj katalog startowy: ')
+# import os
+# for e in os.walk(katalog_startowy):
+#     katalogi=e[1]
+#     for k in katalogi:
+#         if szukane.upper() in k.upper():
+#             print(os.path.join(e[0],k))
+#     pliki=e[2]
+#     for p in pliki:
+#         if szukane.lower() in p.lower():
+#             print(os.path.join(e[0],p))
 
 
 #przerwa do 10:10
+
+#PANDAS,NUMPY,MATPLOTLIB
+#jupiter
+#anaconda
+# import matplotlib.pyplot as plt
+# import random
+# dane=[random.randint(1,30) for e in range(20)]
+# dane2=[random.randint(1,30) for e in range(20)]
+# plt.plot(dane,'#FF0000',label='czerwona kreska')
+# plt.plot(dane2,'#00FF00',label='zielona kreska')
+# plt.xlabel('podpis osi x')
+# plt.ylabel('funkcja od x')
+# plt.grid()
+# plt.legend()
+# plt.savefig('wykres.png')
+# plt.show()
+
+#bonus: Stwórz funkcję która przez argument przyjmie kwotę, ilość lat i wysokość inflacji,
+# a następnie na wykresie przedstawi spadek wartości nabywczej podanej kwoty na przestrzeni lat.
+#klusiewicz@jsystems.pl
+
+
+# krotka=('1','koza','nietoperz','22 755 00 00')
+# # print(krotka)
+# # posortowane=sorted(krotka)
+# # print(posortowane)
+# # for k in krotka:
+# #    print(k)
+# print(krotka[1])
+# print(krotka[0:3])
+
+# lista=[1,5,4,2,3]
+# krotka=tuple(lista)
+# print(lista,type(lista))
+# print(krotka,type(krotka))
+# print(*krotka)
+#
+# krotka=(1,5,4,2,3)
+# print(krotka)
+# print(sorted(krotka))
+# lista=list(krotka)
+# lista.sort()
+# print(lista)
+# krotka=tuple(lista)
+# print(krotka)
+#
+# list_args=[1,2,3]
+# def funkcja(a,b,c):
+#     print(a,b,c)
+#
+# funkcja(*list_args)
+
+#26. Stwórz dwie krotki. Jedna ma zawierać 10 losowych liczb zakresu 1-10, druga 10 losowych liczb zakresu 11-20.
+# Stwórz trzecią krotkę która ma zawierać dane z obu krotek. Trzecią krotkę wypisz na konsoli
