@@ -924,3 +924,39 @@
 # print(k3)
 
 #27. Napisz kod ktora wyświetli w postaci listy krotek zawartość pliku dane.csv
+# lista=[ tuple(e.strip().split(';')) for e in open('dane.csv',encoding='utf-8')]
+# print(lista)
+# for e in lista:
+#     print(e)
+
+
+#przerwa do 11:36
+
+# s1={1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,4,4,4,4,4,4}
+# print(s1)
+
+# lista=[1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,4,4,4,4,4,4]
+# print(lista)
+# zbior=set(lista)
+# print(zbior)
+# lista=list(zbior)
+# print(lista)
+#
+# lista=list(set([1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,4,4,4,4,4,4]))
+# print(lista)
+
+
+# s1={1,2,3,4,5,6,7,8}
+# s2={5,6,7,8,9,0}
+# print("część wspólna:",s1.intersection(s2))
+# print("suma:",s1.union(s2))
+# print("różnica s1-s2:",s1.difference(s2))
+# print("różnica s2-s1:",s2.difference(s1))
+#
+# s=set()
+# s.add(1)
+# s.add('nietoperz')
+# print(s)
+
+#28. Wygeneruj dwa zestawy, dodaj do nich po 20 (w przypadku duplikatów lista może być mniejsza niż 20 elementów)
+# losowych liczb z zakresu 1-40. Wyswietl ich sumę, różnicę i część wspólną
