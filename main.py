@@ -1064,26 +1064,28 @@
 #       w słowniku. Jeśli nie ma to dodaj do słownika wpis o kluczu takim jak sprawdzane słowo i wartości 1
 #       dla ilości wystąpień. Jeśli takie słowo pojawia się już w kluczach słownika to trzeba zwiększyc wartośc o 1
 #    c) Przepakuj dane ze słownika do listy i posortuj.
-import time
-
-p=time.time()
-calosc=open('tadzio.txt',encoding='utf-8').read().lower()
-niechciane=['!','?','.',',',":","/","(",")",'-','…']
-for n in niechciane:
-    calosc=calosc.replace(n,'')
-slowa=calosc.split()
-sl=dict()
-for s in slowa:
-    if s in sl:
-        sl[s]+=1
-    else:
-        sl[s]=1
-
-for k in sl:
-    print(k,sl[k])
-
-k=time.time()
-print(f'całość trwała {k-p}s')
+# import time
+# p=time.time()
+# calosc=open('tadzio.txt',encoding='utf-8').read().lower()
+# niechciane=['!','?','.',',',":","/","(",")",'-','…']
+# for n in niechciane:
+#     calosc=calosc.replace(n,'')
+# slowa=calosc.split()
+# sl=dict()
+# for s in slowa:
+#     if s in sl:
+#         sl[s]+=1
+#     else:
+#         sl[s]=1
+# wynik=[]
+# for k in sl:
+#     element=[k,sl[k]]
+#     wynik.append(element)
+# wynik.sort(key=lambda x:x[1], reverse=True)
+# for w in wynik:
+#     print(w)
+# k=time.time()
+#print(f'całość trwała {k-p}s')
 #lista=calosc.split()
 #
 # sl=dict()
@@ -1106,4 +1108,19 @@ print(f'całość trwała {k-p}s')
 # else:
 #     sl[klucz]=1
 
+
+
 #cowsay i easygui
+#
+# import cowsay
+# cowsay.cow('Lubię pierogi')
+
+#x=input('podaj coś:\n')
+#
+# import easygui
+# x=easygui.enterbox('podaj wartość dla X:')
+# print(x)
+
+#przerwa do 14:28
+
+#33. Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10.
