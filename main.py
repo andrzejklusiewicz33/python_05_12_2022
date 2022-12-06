@@ -1194,3 +1194,46 @@
 # linia=";".join(lista)
 # print(linia)
 # linia=f"{lista[0]};{lista[1]};"
+
+#35. Przetwórz wszystkie wiersze z dane.csv wyswietlajac na konsoli dane z wiersza wzbogacone o bmi.
+# Nie podmieniaj przecinków etc w tekscie. W przypadku pojawienia się wyjątku na rzutowaniu na float dla
+# któregoś wiersza chcemy go zapisać (cały wiersz) w osobnym pliku bledy.csv wzbogacony o informację o rodzaju błędu
+#4;Andrzej;1,89;90;zero division error
+#
+#
+# dane=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# for d in dane:
+#     try:
+#         d.append(round(float(d[4])/pow(float(d[3]),2)))
+#         print(d)
+#     except ValueError:
+#         with open('bledy.csv',encoding='utf-8',mode='w') as plik:
+#             linia=';'.join(d)+";ValueError\n"
+#             plik.write(linia)
+
+#
+# def funkcja():
+#     print('siema!')
+#
+# funkcja()
+
+# def dodaj(a,b):
+#     print(a+b)
+#
+# dodaj(10,20)
+#
+# def dodaj(a,b):
+#     return a+b
+
+#
+# def dodaj(a,b):
+#     wynik=a+b
+#     return wynik
+#     print('dupa')
+#
+# print(dodaj(1,2))
+# x=dodaj(1,2)
+# print(x)
+
+#36.Stwórz funkcję która przyjmie wzrost i masę a zwróci zaokraglone do 2 miejsc po przecinku BMI.
+# W przypadku pojawienia się wyjątku, wyświetl na konsoli jaki wystąpił problem a z funkcji zwróć -1.
