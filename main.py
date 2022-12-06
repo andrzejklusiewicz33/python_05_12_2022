@@ -1283,3 +1283,18 @@
  # przez funkcję z poprzedniego ćwiczenia. Funkcja ta ma przeiterować po otrzymanej
  # liście i wyświetlić każdy element na konsoli. Odbierz dane z funkcji z ćwiczenia
  # poprzedniego i przekaz do nowo powstalej funkcji.
+#
+# def get_data(filename,enc='utf-8',divider=';'):
+#     return [e.strip().split(divider) for e in open(filename,encoding=enc)]
+#
+# def print_data(data):
+#     for d in data:
+#         print(d)
+#
+# result=get_data('dane.csv')
+# print_data(result)
+#
+# print_data(get_data('dane.csv'))
+
+#39. Napisz funkcję która przyjmie przez argumenty kwotę lokaty, oprocentowanie w skali roku, ilosc miesięcy.
+# Funkcja ma zwrócić zarobek na lokacie o podanych parametrach
