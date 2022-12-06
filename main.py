@@ -1034,3 +1034,48 @@
 #31. Wczytaj do słownika dane z pliku dane.csv tak by kluczem było imię sklejone z nazwiskiem rozdzielone spacja,
 # a pozostałe dane znalazły się w wartości
 #   jako krotka lub lista. Przeiteruj po slowniku i wyswietl jego zawartość.
+
+# lista=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# sl=dict()
+# for f in lista:
+#     klucz=f[1]+" "+f[2]
+#     wartosc=[f[0],f[3],f[4]]
+#     sl[klucz]=wartosc
+#
+# for k in sl:
+#     print(k,sl[k])
+
+#PRZERWA OBIADOWA DO 13:08
+
+# Tadeusz
+# Tadeusz.
+# Tadeusz!
+# Tadeusz?
+#
+# tadeusz
+# Tadeusz
+#32. Napisz system który zwróci nam ilość wystąpień każdego ze słow w pliku w postaci listy krotek.
+# [  (slowo,ilosc_wystapien),(slowo,ilosc_wystapien)   ]. Nazwa pliku ma zostać przekazana przez zmienną.
+#    Wynik powinien byc posortowany malejąco wg ilosci wystapien
+#    a) odczytaj wszystkie linie z pliku i rozbij na słowa. Każde ze słów dodaj do osobnej listy.
+#       Zadbaj o usunięcie po drodze znaków specjalnych czyli kropek, przecinków, wykrzykników etc.
+        # i unifikację wielkości tekstu
+#    b) stwórz słownik i dla każdego słowa w liście sprawdz czy istnieje juz wpis dotyczący tego słowa
+#       w słowniku. Jeśli nie ma to dodaj do słownika wpis o kluczu takim jak sprawdzane słowo i wartości 1
+#       dla ilości wystąpień. Jeśli takie słowo pojawia się już w kluczach słownika to trzeba zwiększyc wartośc o 1
+#    c) Przepakuj dane ze słownika do listy i posortuj.
+
+#lista=calosc.split()
+#
+# sl=dict()
+# sl['klucz1']='cos'
+# if 'klucz1' in sl:
+#     print('jest taki klucz')
+# else:
+#     print('nie ma takiego klucza')
+
+# tekst="abc !?., def"
+# niechciane=['!','?','.',',']
+# for n in niechciane:
+#     tekst=tekst.replace(n,'')
+# print(tekst)
