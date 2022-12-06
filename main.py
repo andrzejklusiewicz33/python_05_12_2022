@@ -960,3 +960,36 @@
 
 #28. Wygeneruj dwa zestawy, dodaj do nich po 20 (w przypadku duplikatów lista może być mniejsza niż 20 elementów)
 # losowych liczb z zakresu 1-40. Wyswietl ich sumę, różnicę i część wspólną
+# import random
+# lista=[random.randint(1,40) for e in range(20)]
+# s1=set(lista)
+# print(s1)
+
+#
+# import random
+# s1={random.randint(1,40) for e in range(20)}
+# print(s1)
+
+
+#
+# import random
+# k1=tuple([random.randint(1,40) for e in range(20)])
+# print(k1)
+
+# import random
+# s1={random.randint(1,40) for e in range(20)}
+# s2={random.randint(1,40) for e in range(20)}
+# print(s1)
+# print(s2)
+# print('suma:',s1.union(s2))
+# print('część wspólna:',s1.intersection(s2))
+# print('s1-s2:',s1.difference(s2))
+# print('s2-s1:',s2.difference(s1))
+
+#
+# lista=['1','2','3','4','5','cos']
+# lista.sort()
+
+
+#29. Zduplikuj jeden z wierszy w pliku dane.csv.
+# Napisz kod który zwróci do postaci listy krotek zawartość tego pliku z danymi bez powtórek.
