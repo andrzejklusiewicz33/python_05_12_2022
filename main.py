@@ -810,4 +810,48 @@
 
 #24. Wyświetl na konsoli linia po linii dane z pliku dane.csv ale posortowane  malejąco wg. bmi
 
-lista = [linia.strip().split(';') for linia in open('dane.csv', encoding='utf-8')]
+# lista = [linia.strip().split(';') for linia in open('dane.csv', encoding='utf-8')]
+
+# for e in lista:
+#     wzrost=float(e[3])
+#     masa=float(e[4])
+#     bmi=round(masa/pow(wzrost,2),2)
+#     e.append(bmi)
+#
+# lista.sort(key=lambda e:e[5],reverse=True)
+#
+# for x in lista:
+#     print(x)
+#
+# lista = [linia.strip().split(';') for linia in open('dane.csv', encoding='utf-8')]
+# for e in lista:
+#     e.append(round(float(e[4])/pow(float(e[3]),2),2))
+#
+# lista.sort(key=lambda e:e[5],reverse=True)
+#
+# for x in lista:
+#     print(x)
+
+# import os
+# for e in os.walk('e:\\'):
+#     print(e)
+
+#25. Napisz wyszukiwarkę plików która przyjmie od użytkownika szukaną frazę i katalog startowy.
+# Wyszukiwarka ma wyswietlić wszystkie pliki i katalogi zawierajace w nazwie szukaną frazę - wraz ze ścieżkami.
+# Wyszukiwarka ma być nieczuła na wielkość liter
+
+# import os
+# for e in os.walk('e:\\'):
+#     print(e)
+    #print(e[0]) #e jest krotką
+
+import os
+for e in os.walk('e:\\'):
+    katalogi=e[1]
+    for k in katalogi:
+        if 'oracle' in k:
+            print(os.path.join(e[0],k))
+            #print(e[0],k)
+
+
+#przerwa do 10:10
