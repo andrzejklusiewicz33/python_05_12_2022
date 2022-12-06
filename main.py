@@ -1298,3 +1298,13 @@
 
 #39. Napisz funkcję która przyjmie przez argumenty kwotę lokaty, oprocentowanie w skali roku, ilosc miesięcy.
 # Funkcja ma zwrócić zarobek na lokacie o podanych parametrach
+
+#
+# def lokata(hajs,oprocentowanie,ilosc_miesiecy):
+#     aktualny_hajs=hajs
+#     for m in range(1,ilosc_miesiecy+1):
+#         aktualny_hajs=aktualny_hajs+(aktualny_hajs*oprocentowanie/12)
+#     return round(aktualny_hajs-hajs,2)
+#
+# zysk=lokata(100000,0.08,24)
+# print(zysk)
