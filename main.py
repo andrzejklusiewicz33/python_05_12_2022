@@ -675,3 +675,17 @@
 
 # for e in [ linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]:
 #     print(e[1],e[2])
+#
+# for linia in open('dane.csv',encoding='utf-8'):
+#     lista=linia.strip().split(';')
+#     print(lista[2])
+
+# lista=[linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]
+# for e in lista:
+#     print(e)
+
+# for e in [linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]:
+#     print(e[3],type(e[3]),float(e[3])/2)
+
+#21. Dla każdego wpisu w pliku dane.csv wyświetl na konsoli dane o
+#   id, imieniu,nazwisku, wzroscie,masie oraz obliczonym bmi zawodnika
