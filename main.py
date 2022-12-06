@@ -796,3 +796,8 @@
 
 #23. Wczytaj do listy kolejne wiersze z pliku dane.csv. Dane posortuj po wadze i wyswietl linia po linii na konsoli
 
+
+lista=[linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]
+
+for e in lista:
+    print(e)
