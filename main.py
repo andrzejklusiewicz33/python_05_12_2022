@@ -1761,9 +1761,22 @@
 #klasa z wlasciwymi polami
 #konstruktor sparametryzowany
 #implementacja __str__
+#
+# class Player:
+#     def __init__(self,player_id,first_name,last_name,height,weight):
+#         self.player_id=player_id
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.height=height
+#         self.weight=weight
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# result=[]
+# for f in [e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]:
+#     p=Player(f[0],f[1],f[2],float(f[3]),float(f[4]))
+#     result.append(p)
+#
+# for r in result:
+#     print(r)
 
-class Player:
-    def __init__(self,player_id,first_name,last_name,height,weight):
-        pass
-    def __str__(self):
-        pass
