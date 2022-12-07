@@ -1438,3 +1438,25 @@
 
 #42. Napisz funkcję która przyjmie przez parametr nazwę pliku do którego zapisze
 #    wszystkie wiersze z tabelki pracownicy w fomacie csv
+
+# import psycopg2
+# with psycopg2.connect(host="localhost",database='postgres',port=5432, user='mapet', password='dupa') as connection:
+#     cursor=connection.cursor()
+#     cursor.execute('select * from pracownicy')
+#     with open('pracownicy.csv',encoding='utf-8',mode='w') as file:
+#         for w in cursor:
+#             line=f'{w[0]};{w[1]};{w[2]};{w[3]};{w[4]}\n'
+#             file.write(line)
+#
+# def export_employees(filename):
+#     import psycopg2
+#     with psycopg2.connect(host="localhost",database='postgres',port=5432, user='mapet', password='dupa') as connection:
+#         cursor=connection.cursor()
+#         cursor.execute('select * from pracownicy')
+#         with open(filename,encoding='utf-8',mode='w') as file:
+#             for w in cursor:
+#                 line=f'{w[0]};{w[1]};{w[2]};{w[3]};{w[4]}\n'
+#                 file.write(line)
+#
+# export_employees('plik_exportu.csv')
+
