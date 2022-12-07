@@ -1412,7 +1412,29 @@
 #     print('ok')
 
 #Przerwa do 10:15
+#
+# import psycopg2
+# connection=psycopg2.connect(host="localhost",database='postgres',port=5432, user='mapet', password='dupa')
+# connection.close()
+#42. szkolenie_jsystems_2021
 
-import psycopg2
-connection=psycopg2.connect(host="localhost",database='postgres',port=5432, user='mapet', password='dupa')
-#42.
+
+# import psycopg2
+# with psycopg2.connect(host="localhost",database='postgres',port=5432, user='mapet', password='dupa') as connection:
+#     cursor=connection.cursor()
+#     cursor.execute('select * from produkty')
+#     for w in cursor:
+# #        print(w)
+#         print(w[1])
+
+# import psycopg2
+# with psycopg2.connect(host="localhost",database='postgres',port=5432, user='mapet', password='dupa') as connection:
+#     cursor=connection.cursor()
+#     x=1
+#     cursor.execute(f'select * from produkty where id_produktu={x}')
+#     w=cursor.fetchone()
+#     print(w)
+
+
+#42. Napisz funkcję która przyjmie przez parametr nazwę pliku do którego zapisze
+#    wszystkie wiersze z tabelki pracownicy w fomacie csv
