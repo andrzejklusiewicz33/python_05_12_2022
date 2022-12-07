@@ -1308,3 +1308,42 @@
 #
 # zysk=lokata(100000,0.08,24)
 # print(zysk)
+
+# import modulik
+# modulik.witaj()
+
+# import modulik as m
+# m.witaj()
+#
+# from modulik import *
+# witaj()
+#
+# import invoice_dao as idao
+# import participant_dao as pdao
+#
+# print(idao.get_all())
+# print(pdao.get_all())
+#
+# from invoice_dao import *
+# from participant_dao import *
+# print(get_all())
+
+#import modulik
+#import this
+
+#
+# import dao.invoice_dao
+# print(dao.invoice_dao.get_all())
+
+
+# import dao.invoice_dao as idao
+# print(idao.get_all())
+#
+# from dao.invoice_dao import *
+# print(get_all())
+
+#import dao.invoice_dao
+
+#40. Stwórz pakiet zawierający moduł który bedzie zawierał funkcję przyjmującą wzrost i masę a zwracającą bmi.
+# Zaimportuj i wywołaj tę funkcję w taki sposób by przy jej wywołaniu nie trzeba było
+# podawać nazwy pakietu ani modułu.
