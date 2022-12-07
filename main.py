@@ -1681,3 +1681,37 @@
 # Niech każdy obiekt klasy ustawienia podczas jego tworzenia wczytuje do tego słownika zawartość pliku
 # konfiguracyjnego w taki sposób, by pierwsza kolumna stanowiła klucze dla słownika a druga wartości.
 #Przetestuj tworzenie obiektu i sprawdź czy dane znajduja sie w slowniku zawartym w tym obiekcie.
+#
+# class Ustawienia:
+#     sl=dict()
+#     def __init__(self):
+#         for f in [e.strip().split('=') for e in open('ustawienia.conf',encoding='utf-8')]:
+#             self.sl[f[0]]=f[1]
+#
+# u = Ustawienia()
+# print(u.sl)
+# print(u.sl['color'])
+
+
+# class Osoba:
+#     def __init__(self,imie,nazwisko):
+#         self.imie = imie
+#         self.nazwisko = nazwisko
+#     def __str__(self):
+#         #return f'imie={self.imie}, nazwisko={self.nazwisko}'
+#         return str(self.__dict__)
+#
+#
+# o=Osoba('Andrzej','Klusiewicz')
+# print(o)
+# #print(o.__dict__)
+
+#49. Przesłoń metodę "__str__" w klasie "Samochod". Stwórz obiekt tej klasy i wyświetl jego zawartość na konsoli
+
+class Samochod:
+    def __init__(self,marka,model,rejestracja):
+        self.marka=marka
+        self.model=model
+        self.rejestracja=rejestracja
+    def wyswietl(self):
+        print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
