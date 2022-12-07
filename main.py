@@ -1372,3 +1372,46 @@
 #41. z usługi sieciowej http://jsystems.pl/Universe/samaTabelka.do pobierz informację o szkoleniach.
 # na konsoli wyswietl tytuly, miasta i daty wszystkich szkolen które w tytule mają malymi badz duzymi
 # literami "Python" i status terminu gwarantowanego (pole terminyGwarantowany=1)
+
+#
+# import requests
+# response=requests.get('https://jsystems.pl/Universe/samaTabelka.do')
+# if response.status_code==200:
+#     data=response.json()
+#     for t in data:
+#         if "Python".lower() in t['tytul_szkolenia'].lower() and t['terminyGwarantowany']==1:
+#             print(t['tytul_szkolenia'],t['termin'],t['miasto'])
+
+
+#
+# import requests
+# response=requests.get('https://jsystems.pl/Universe/samaTabelka.do')
+# if response.status_code==200:
+#     for t in [e for e in response.json() if "Python".lower() in e['tytul_szkolenia'].lower() and e['terminyGwarantowany']==1]:
+#         print(t['tytul_szkolenia'],t['termin'],t['miasto'])
+
+
+# import requests
+# response=requests.get('https://jsystems.pl/Universe/samaTabelka.do')
+
+# import requests
+# data=dict()
+# data['klucz1']='wartosc1'
+# response=requests.post('https://jsystems.pl/Universe/samaTabelka.do',data=data,headers={"Content-Type":"application/json"})
+# print(response.status_code)
+#
+# import requests
+# response=requests.get('https://jsystems.pl/Universe/samaTabelka.do')
+# if response.status_code==200:
+#     for t in [e for e in response.json() if "Python".lower() in e['tytul_szkolenia'].lower() and e['terminyGwarantowany']==1]:
+#         print(t['tytul_szkolenia'],t['termin'],t['miasto'])
+#
+# import requests
+# response=requests.get('https://jsystems.pl/Universe/samaTabelka.do',auth=("andrzej",'lubiepierogi'))
+# if response.status_code==200:
+#     print('ok')
+
+#Przerwa do 10:15
+
+
+#42.
