@@ -1413,5 +1413,6 @@
 
 #Przerwa do 10:15
 
-
+import psycopg2
+connection=psycopg2.connect(host="localhost",database='postgres',port=5432, user='mapet', password='dupa')
 #42.
