@@ -1708,10 +1708,53 @@
 
 #49. Przesłoń metodę "__str__" w klasie "Samochod". Stwórz obiekt tej klasy i wyświetl jego zawartość na konsoli
 
-class Samochod:
-    def __init__(self,marka,model,rejestracja):
-        self.marka=marka
-        self.model=model
-        self.rejestracja=rejestracja
-    def wyswietl(self):
-        print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+# class Samochod:
+#     def __init__(self,marka,model,rejestracja):
+#         self.marka=marka
+#         self.model=model
+#         self.rejestracja=rejestracja
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# s=Samochod('Mercedes','e200','WWL 12345')
+# print(s)
+
+#przerwa do 14:17
+
+
+# class Osoba:
+#     def __init__(self,imie,nazwisko):
+#         self.imie = imie
+#         self.nazwisko = nazwisko
+#     def __str__(self):
+#         #return f'imie={self.imie}, nazwisko={self.nazwisko}'
+#         return str(self.__dict__)
+#
+# data=[]
+# for x in range(1,11):
+#     o=Osoba(f'imie {x}',f'nazwisko {x}')
+#     data.append(o)
+#
+# for d in data:
+#     print(d)
+
+#
+# class Osoba:
+#     def __init__(self,imie,nazwisko):
+#         self.imie = imie
+#         self.nazwisko = nazwisko
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# def get_data():
+#     data = []
+#     for x in range(1, 11):
+#         o = Osoba(f'imie {x}', f'nazwisko {x}')
+#         data.append(o)
+#     return data
+#
+# for d in get_data():
+#     print(d)
+
+#50. Załaduj dane z pliku dane.csv do postaci listy obiektów.
+# Następnie przeiteruj po tej liście i wyświetl zawartość każdego z obiektów
