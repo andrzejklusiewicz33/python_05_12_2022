@@ -1758,3 +1758,12 @@
 
 #50. Załaduj dane z pliku dane.csv do postaci listy obiektów.
 # Następnie przeiteruj po tej liście i wyświetl zawartość każdego z obiektów
+#klasa z wlasciwymi polami
+#konstruktor sparametryzowany
+#implementacja __str__
+
+class Player:
+    def __init__(self,player_id,first_name,last_name,height,weight):
+        pass
+    def __str__(self):
+        pass
