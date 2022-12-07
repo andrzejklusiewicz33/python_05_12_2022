@@ -1466,16 +1466,68 @@
 # faker=Faker('PL_pl')
 # print(faker.first_name(),faker.last_name(),faker.phone_number(),faker.email(),faker.company())
 
-from faker import Faker
-import psycopg2
-import random
-faker=Faker('PL_pl')
-with psycopg2.connect(host="localhost",database='postgres',port=5432, user='mapet', password='dupa') as connection:
-    cursor=connection.cursor()
-    for x in range(1,11):
-        sql=f"insert into pracownicy(imie,nazwisko,zarobki,komentarz) values ('{faker.first_name()}','{faker.last_name()}',{random.randint(1000,20000)},'{faker.paragraph()}')"
-        print(sql)
-        cursor.execute(sql)
-    connection.commit()
+# from faker import Faker
+# import psycopg2
+# import random
+# faker=Faker('PL_pl')
+# with psycopg2.connect(host="localhost",database='postgres',port=5432, user='mapet', password='dupa') as connection:
+#     cursor=connection.cursor()
+#     for x in range(1,11):
+#         sql=f"insert into pracownicy(imie,nazwisko,zarobki,komentarz) values ('{faker.first_name()}','{faker.last_name()}',{random.randint(1000,20000)},'{faker.paragraph()}')"
+#         print(sql)
+#         cursor.execute(sql)
+#     connection.commit()
 
 #43.Załaduj do tabelki zawodnicy wszystkie dane z pliku dane.csv
+
+#
+# import psycopg2
+# with psycopg2.connect(host="localhost",database='postgres',port=5432, user='mapet', password='dupa') as connection:
+#     cursor=connection.cursor()
+#     for x in [e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]:
+#         print(x)
+#         sql=f"insert into zawodnicy values  ({x[0]},'{x[1]}','{x[2]}',{x[3]},{x[4]})"
+#         print(sql)
+#         cursor.execute(sql)
+#     connection.commit()
+
+#
+# class Osoba:
+#     imie=None
+#     nazwisko=None
+#
+# o1=Osoba()
+# o1.imie='Andrzej'
+# o1.nazwisko='Klusiewicz'
+#
+# o2=Osoba()
+# o2.imie='Marian'
+# o2.nazwisko='Paździoch'
+#
+# print(o1.imie, o1.nazwisko)
+# print(o2.imie, o2.nazwisko)
+
+
+# class Osoba:
+#     imie=None
+#     nazwisko=None
+#     def przedstaw_sie(self):
+#         print(f'Cześć, jestem {self.imie} {self.nazwisko}')
+#
+# o1=Osoba()
+# o1.imie='Andrzej'
+# o1.nazwisko='Klusiewicz'
+#
+# o2=Osoba()
+# o2.imie='Marian'
+# o2.nazwisko='Paździoch'
+#
+# o1.przedstaw_sie()
+# o2.przedstaw_sie()
+#
+# print(o1.imie, o1.nazwisko)
+# print(o2.imie, o2.nazwisko)
+
+#44. Stwórz klasę "Samochod" posiadającą pola "marka", "model", "rejestracja".
+# Klasa ta powinna zawierać też metodę "wyswietl" wypisującą dane z obiektu na konsoli Stwórz dwa obiekty i uzupełnij dane
+# tej klasy i korzystajac  z metody "wyświetl" wyswietl na konsoli ich zawartość.
