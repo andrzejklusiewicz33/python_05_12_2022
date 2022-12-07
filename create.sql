@@ -28,3 +28,14 @@ insert into pracownicy(imie,nazwisko,zarobki,komentarz) values ('Arnold','Boczek
 
 select * from pracownicy;
 --DBEAVER
+
+
+create table zawodnicy(
+id_zawodnika integer primary key,
+imie text,
+nazwisko text,
+wzrost numeric,
+masa numeric
+);
+
+select  * from zawodnicy;

@@ -1478,4 +1478,4 @@ with psycopg2.connect(host="localhost",database='postgres',port=5432, user='mape
         cursor.execute(sql)
     connection.commit()
 
-#43.
+#43.Załaduj do tabelki zawodnicy wszystkie dane z pliku dane.csv
