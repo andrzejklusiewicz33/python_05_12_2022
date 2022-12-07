@@ -1460,3 +1460,22 @@
 #
 # export_employees('plik_exportu.csv')
 
+#przerwa do 11:37
+
+# from faker import Faker
+# faker=Faker('PL_pl')
+# print(faker.first_name(),faker.last_name(),faker.phone_number(),faker.email(),faker.company())
+
+from faker import Faker
+import psycopg2
+import random
+faker=Faker('PL_pl')
+with psycopg2.connect(host="localhost",database='postgres',port=5432, user='mapet', password='dupa') as connection:
+    cursor=connection.cursor()
+    for x in range(1,11):
+        sql=f"insert into pracownicy(imie,nazwisko,zarobki,komentarz) values ('{faker.first_name()}','{faker.last_name()}',{random.randint(1000,20000)},'{faker.paragraph()}')"
+        print(sql)
+        cursor.execute(sql)
+    connection.commit()
+
+#43.
