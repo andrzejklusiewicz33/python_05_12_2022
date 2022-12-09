@@ -1865,3 +1865,17 @@
 
 #79. Stwórz generator który będzie podawał nieskończenie wiele liczb parzystych.
 # Przetestuj go pobierając z niego kolejne wartości i wyświetlając je na konsoli.
+
+#reportlab
+#
+# def nieskonczone_parzyste():
+#     x=0
+#     while True:
+#        x+=2
+#        yield x
+#
+# for np in nieskonczone_parzyste():
+#     print(np,type(np))
+
+#klusiewicz@jsystems.pl
+#DZIĘKUJĘ! :)
