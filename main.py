@@ -1781,3 +1781,74 @@
 #     print(r)
 
 
+#import this
+
+#import time
+# def funkcja():
+#     wynik=[]
+#     #for x in range(1,11):
+#     x=0
+#     while True:
+#         x+=1
+#         #time.sleep(1)
+#         wynik.append(f'element numer {x}')
+#     return wynik
+#
+# for e in funkcja():
+#     print(e)
+
+# import time
+# def generator():
+#     for x in range(1,11):
+#         time.sleep(1)
+#         yield f'element numer {x}'
+#
+# for g in generator():
+#     print(g)
+#
+# def generator():
+#     x=0
+#     while True:
+#         x+=1
+#         yield f'element numer {x}'
+#
+# for g in generator():
+#     print(g)
+#
+# def generator():
+#     x=0
+#     while True:
+#         x+=1
+#         yield f'element numer {x}'
+#
+# fun=generator()
+# print(next(fun))
+# print(next(fun))
+# print(next(fun))
+# print(next(generator()))
+# print(next(generator()))
+# print(next(generator()))
+
+#77.Stwórz generator który będzie podawał kolejne dni tygodnia (poniedzialek,wtorek etc).
+# Przeiteruj po zwracanych przez niego wartosciach i wyswietl je na konsoli
+#
+# def dni():
+#     yield 'poniedziałek'
+#     yield 'wtorek'
+#     yield 'środa'
+#     yield 'czwartek'
+#     yield 'piątek'
+#     yield 'sobota'
+#     yield 'niedziela'
+#
+# # for d in dni():
+# #     print(d)
+#
+# fun=dni()
+# print(fun,type(fun))
+# for x in range(1,8):
+#     print(next(fun))
+
+#78. Stworz generator ktory bedzie przyjmowal przez parametr ilosc elementow a nastepnie
+# zwracal elementy o tresci 'element o indeksie x'( gdzie x bedzie numerem podawanego elementu)
+# czekajac 1 sekunde przed zwrotem kazdego elementu.
